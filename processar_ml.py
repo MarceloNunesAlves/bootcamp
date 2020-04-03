@@ -86,11 +86,11 @@ def recommendation(label, perfilInvestidor):
     produtos_f = produtos_f[~produtos_f['ProdutoId'].isin(df_remover_produtos['ProdutoId'])]
     produtos_rf = produtos_rf[~produtos_rf['ProdutoId'].isin(df_remover_produtos['ProdutoId'])]
 
-    if len(produtos_f) == 0:
+    if len(produtos_f) < 10:
         db.removerRecommendation(label)
         produtos_f = loadFundos(label)
 
-    if len(produtos_rf) == 0:
+    if len(produtos_rf) < 10:
         db.removerRecommendation(label)
         produtos_rf = loadRendaFixa(label)
 

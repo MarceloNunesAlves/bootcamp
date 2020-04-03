@@ -10,8 +10,29 @@ def index():
     html = '''
         <html>
             <body>
-                <h1>Serviço de recomendação</h1>
-                <p></p>
+                <h1>Serviço de recomendação de investimentos</h1>
+                <br/>
+                <p>Metodo: POST</p>
+                <p>Exemplo do corpo da mensagem:</p>
+                <div style="border: solid 1px gray;padding: 5px;background-color: lightgray;width: 400px;">
+                    <p>
+                        {<br/>
+                           &emsp;"Idade":22,<br/>
+                           &emsp;"EstadoCivil":"S",<br/>
+                           &emsp;"BillingCity":"S\\u00e3o Paulo",<br/>
+                           &emsp;"NivelConhecimentoAtual":"0",<br/>
+                           &emsp;"ScoreNivelConhecimento":"0",<br/>
+                           &emsp;"PerfilInvestidor":"0",<br/>
+                           &emsp;"RendaMensal":"1900",<br/>
+                           &emsp;"ValorPatrimonio":"1000",<br/>
+                           &emsp;"Ind_Guardado":"0",<br/>
+                           &emsp;"ScoreRisco":"0",<br/>
+                           &emsp;"ScoreObjetivos":"0",<br/>
+                           &emsp;"ScoreSituacaoFinanceira":"0",<br/>
+                           &emsp;"Soma_Investido_Total":"0"<br/>
+                        }<br/>
+                    </p>
+                </div>
             </body>
         </html>
     '''

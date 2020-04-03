@@ -1,10 +1,18 @@
-# Projeto de recomendação de investimento (PI)
+# Modelo de recomendação de investimentos
+
+Este projeto tem como objetivo aumentar a ativação de clientes através do excelente mecanismo de recomendação de produtos.
+
+## Execução do middleware
+
+Para subir o ambiente basta executar o comando abaixo:
+
+    python main.py
 
 ## Dados da API
 
 URL: http://localhost:5000/
-
-Corpo de mensagem:
+Metodo: POST
+Exemplo do corpo da mensagem:
 
     {
        "Idade":22,
